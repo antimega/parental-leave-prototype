@@ -2,12 +2,21 @@ GovukPrototypingRails::Application.routes.draw do
   
   get "examples/index"
   get "examples" => 'examples#index'
-  
+
+  get "employee" => 'employee#index'
+  get "employee/circumstances" => 'employee#circumstances'
+  get "employee/duedate" => 'employee#duedate'
+  get "employee/employment" => 'employee#employment'
+  get "employee/mothers-employment" => 'employee#mothers-employment'  
+  get "employee/partners-employment" => 'employee#partners-employment'
+  get "employee/leave-dates" => 'employee#leave-dates'
+  get "employee/outcome" => 'employee#outcome'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'examples#index'
+  root 'employee#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
