@@ -8,9 +8,9 @@ GovukPrototypingRails::Application.routes.draw do
   get "employee/circumstances" => 'employee#circumstances'
   get "employee/duedate" => 'employee#duedate'
   get "employee/employment" => 'employee#employment'
-  get "employee/mothers-employment" => 'employee#mothers-employment'  
-  get "employee/partners-employment" => 'employee#partners-employment'
-  get "employee/leave-dates" => 'employee#leave-dates'
+  get "employee/mothers-employment" => 'employee#mothersemployment'  
+  get "employee/partners-employment" => 'employee#partnersemployment'
+  get "employee/leave-dates" => 'employee#leavedates'
   get "employee/outcome" => 'employee#outcome'
 
   # The priority is based upon order of creation: first created -> highest priority.
